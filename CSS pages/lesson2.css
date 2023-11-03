@@ -1,0 +1,150 @@
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .btn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .btn,
+.btn:focus {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#crop {
+    height: 450px;
+}
+
+#cropselection {
+    width: 600px;
+    height: 450px;
+    margin-left: 20px;
+}
+
+#selection {
+    width: 570px;
+    height: 450px;
+    margin-left: 20px;
+}
+
+#before {
+    height: 400px;
+    width: 650px
+}
+
+#after {
+    height: 400px;
+    width: 420px;
+}
+
+#imgtrace {
+    height:300px;
+    width: 320px;
+}
+
+#negative {
+    height: 300px;
+    width: 320px;
+    margin-left: 20px;
+    border: 1px solid;
+}
+
+#outline {
+    height: 300px;
+    width: 320px;
+    margin-left: 20px;
+    border: 1px solid;
+}
+
+#simplify {
+    height: 300px;
+    width: 320px;
+    margin-left: 20px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Personal Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device width, initial-scale=1" />
+    <link href="../CSS pages/lesson2.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html">Homepage</a>
+            <a href="aboutme.html">About me</a>
+            <a href="contact.html">Contact</a>
+            <div class="dropdown">
+                <button class="btn" onclick="myFunction()">Assignments
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <h1>27 October/Week 2</h1>
+    <h2>Crop Images</h2>
+    <p>1.Using the crop tool, resize the image selected<br>
+        2. Choose your selection from the image<br>
+        3. Finish</p>
+    <img id="crop" src="../Pictures/croptool.png" alt="croptool">
+    <img id="cropselection" src="../Pictures/cropselection.png" alt="selection">
+    <img id="selection" src="../Pictures/Selection.png" alt="selected">
+    <h2 style="margin-top: 50px;">Removing a background from a picture using Photoshop</h2>
+    <p>1. Choose your picture and unlock the layer<br>
+        2. In the Properties panel, click Remove Background under Quick Actions.<br>
+        3.Use the Brush tool to clean up any small bits of background that remain.
+    </p>
+    <img id="before" src="../Pictures/Before.png" alt="before">
+    <img id="remove" src="../Pictures/remove.png" alt="remove">
+    <img id="after" src="../Pictures/after.png" alt="after">
+    <h2 style="margin-top: 50px;">Converting raster to vector using Illustrator</h2>
+    <p>1. Open your raster file in Illustrator<br>
+        2. Use the Image Trace tool<br>
+        3. Remove interior geometry and negative space<br>
+        4. View your image in Outline mode<br>
+        5. Simplify vector paths
+    </p>
+    <img id="imgtrace" src="../Pictures/imagetrace.png" alt="imgtrace">
+    <img id="negative" src="../Pictures/Negative.png" alt="negative">
+    <img id="outline" src="../Pictures/outline.png" alt="outline">
+    <img id="simplify" src="../Pictures/simplify.png" alt="outline">
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.btn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

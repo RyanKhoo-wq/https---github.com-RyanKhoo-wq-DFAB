@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Personal Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device width, initial-scale=1" />
+    <link href="../CSS pages/aboutme.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html">Homepage</a>
+            <a href="aboutme.html">About me</a>
+            <a href="contact.html">Contact</a>
+            <div class="dropdown">
+            <button class="btn" onclick="myFunction()">Assignments
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="lesson2.html">Lesson 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+            </div> 
+          </div>
+        <h1>About Me</h1>
+    </header>
+    <div class="container">
+        <div class="left">
+            <img id="me" src="../Pictures/whatsPP.png" alt="profile picture">
+        </div>
+        <div class="right">
+            <p id="about">Hi everyone I am Ryan, a year 2 student studying Information Technology in Singapore
+                Polytechnic. During
+                my free time, I enjoy watching anime and playing games. I also find great solace and enjoyment in
+                immersing myself in the serenity of nature. Taking leisurely strolls or just sitting amidst of natural
+                surroundings give me a sense of peace and contentment that cannot be found anywhere else.<br><br>
+
+            </p>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.btn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
